@@ -36,13 +36,13 @@ public class Main {
                                                     S3Buckets s3Buckets) {
         s3Service.putObject(
                 s3Buckets.getCustomer(),
-                "foo/bar/jamila",
+                "foo/bar/object",
                 "Hello World".getBytes()
         );
 
         byte[] obj = s3Service.getObject(
                 s3Buckets.getCustomer(),
-                "foo/bar/jamila"
+                "foo/bar/object"
         );
 
         System.out.println("Hooray: " + new String(obj));

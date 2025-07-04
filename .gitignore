@@ -30,14 +30,7 @@ dist-ssr
 *.sln
 *.sw?
 
-# Angular
-**/.angular/cache
-.sass-cache/
-connect.lock
-coverage
-libpeerconnection.log
-testem.log
-typings
+
 
 # Visual Studio Code
 !.vscode/settings.json

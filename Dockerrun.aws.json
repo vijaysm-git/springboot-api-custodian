@@ -3,7 +3,7 @@
   "containerDefinitions": [
     {
       "name": "project-api",
-      "image": "amigoscode/amigoscode-api:20.04.2023.13.39.03",
+      "image": "vijayasarathism/project-api:latest",
       "essential": true,
       "memory": 512,
       "portMappings": [
@@ -14,8 +14,28 @@
       ],
       "environment": [
         {
+          "name": "DB_URL",
+          "value": "jdbc:postgresql://your-rds-endpoint:5432/postgres"
+        },
+        {
+          "name": "DB_USERNAME",
+          "value": "postgres"
+        },
+        {
+          "name": "DB_PASSWORD",
+          "value": "password123"
+        },
+        {
+          "name": "AWS_REGION",
+          "value": "ap-south-1"
+        },
+        {
+          "name": "AWS_S3_BUCKET",
+          "value": "project-customer"
+        },
+        {
           "name": "SPRING_PROFILES_ACTIVE",
-          "value": "test"
+          "value": "default"
         }
       ]
     }
