@@ -26,8 +26,8 @@ public class CustomerListDataAccessService implements CustomerDao {
 
         Customer jamila = new Customer(
                 2,
-                "Jamila",
-                "jamila@gmail.com",
+                "max",
+                "max@gmail.com",
                 "password",
                 19,
                 Gender.MALE);

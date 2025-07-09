@@ -1,0 +1,16 @@
+version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - npm ci --prefix ./frontend # Install dependencies in the frontend directory
+    build:
+      commands:
+        - npm run build --prefix ./frontend # Run build command in the frontend directory
+  artifacts:
+    baseDirectory: frontend/dist # Path to your built frontend files relative to the repo root
+    files:
+      - '**/*'
+  cache:
+    paths:
+      - frontend/node_modules/**/* # Cache node_modules in the frontend directory

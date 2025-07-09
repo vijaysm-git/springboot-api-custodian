@@ -19,8 +19,8 @@ class CustomerRowMapperTest {
         ResultSet resultSet = mock(ResultSet.class);
         when(resultSet.getInt("id")).thenReturn(1);
         when(resultSet.getInt("age")).thenReturn(19);
-        when(resultSet.getString("name")).thenReturn("Jamila");
-        when(resultSet.getString("email")).thenReturn("jamila@gmail.com");
+        when(resultSet.getString("name")).thenReturn("Jamal");
+        when(resultSet.getString("email")).thenReturn("jamal@gmail.com");
         when(resultSet.getString("gender")).thenReturn("FEMALE");
         when(resultSet.getString("password")).thenReturn("password");
         when(resultSet.getString("profile_image_id")).thenReturn("22222");
@@ -32,8 +32,8 @@ class CustomerRowMapperTest {
         // Then
         Customer expected = new Customer(
                 1,
-                "Jamila",
-                "jamila@gmail.com",
+                "Jamal",
+                "jamal@gmail.com",
                 "password",
                 19,
                 Gender.FEMALE,
