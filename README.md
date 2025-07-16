@@ -85,7 +85,7 @@ This project leverages a modern and robust tech stack for building a high-perfor
 
 Provide a high-level overview of your project's architecture. A diagram here would be extremely beneficial.
 
-![Architecture Diagram](https://placehold.co/800x400/png?text=Your%20Architecture%20Diagram%20Here) *This diagram illustrates the flow of data from client requests to the backend API, interacting with AWS RDS for data persistence and AWS S3 for object storage, all deployed within a Docker container on [Your chosen cloud platform].*
+![Architecture Diagram](https://ibb.co/mrF445VF) *This diagram illustrates the flow of data from client requests to the backend API, interacting with AWS RDS for data persistence and AWS S3 for object storage, all deployed within a Docker container on [Your chosen cloud platform].*
 
 **Example Components & Flow:**
 * **Client (Web/Mobile):** Makes API calls to the backend.
@@ -285,6 +285,12 @@ Document your key API endpoints here. You can use tools like Swagger/OpenAPI for
 *(You can expand this with request/response examples or link to a Swagger UI if you have one.)*
 
 ---
+###pictures/ demo
+signup page (https://ibb.co/Mx3G48RR)
+customer page (https://ibb.co/fVS3rV7N)
+create new customer (https://ibb.co/VWYphD2v)
+customer created (https://ibb.co/rXngqrv)
+edit/update existing customer (https://ibb.co/rXngqrv)
 
 ## Roadmap
 
