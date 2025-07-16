@@ -85,7 +85,7 @@ This project leverages a modern and robust tech stack for building a high-perfor
 
 Provide a high-level overview of your project's architecture. A diagram here would be extremely beneficial.
 
-![Architecture Diagram](https://ibb.co/mrF445VF) *This diagram illustrates the flow of data from client requests to the backend API, interacting with AWS RDS for data persistence and AWS S3 for object storage, all deployed within a Docker container on [Your chosen cloud platform].*
+[Architecture Diagram](https://ibb.co/mrF445VF) *This diagram illustrates the flow of data from client requests to the backend API, interacting with AWS RDS for data persistence and AWS S3 for object storage, all deployed within a Docker container on [Your chosen cloud platform].*
 
 **Example Components & Flow:**
 * **Client (Web/Mobile):** Makes API calls to the backend.
