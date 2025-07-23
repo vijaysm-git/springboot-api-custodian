@@ -1,3 +1,4 @@
+# application.yml
 server:
   port: 8080
   error:
@@ -5,13 +6,13 @@ server:
 
 spring:
   datasource:
-    url: ${DB_URL}
-    username: ${DB_USERNAME}
-    password: ${DB_PASSWORD}
+    url: ${SPRING_DATASOURCE_URL}
+    username: ${SPRING_DATASOURCE_USERNAME}
+    password: ${SPRING_DATASOURCE_PASSWORD}
     driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
-      ddl-auto: update
+      ddl-auto: validate
     properties:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
@@ -21,11 +22,22 @@ spring:
 aws:
   region: ${AWS_REGION}
   s3:
-    bucket: ${AWS_S3_BUCKET}
+    # --- CRITICAL CHANGE START ---
+    buckets: # This matches the prefix in @ConfigurationProperties(prefix = "aws.s3.buckets")
+      customer: ${AWS_S3_BUCKET} # This maps to 'private String customer;' in S3Buckets.java
+    # --- CRITICAL CHANGE END ---
     mock: false
+    profile-image-folder: "profile-images/"
 
 cors:
   allowed-origins: ${CORS_ALLOWED_ORIGINS:*}
   allowed-methods: ${CORS_ALLOWED_METHODS:*}
   allowed-headers: ${CORS_ALLOWED_HEADERS:*}
   exposed-headers: ${CORS_EXPOSED_HEADERS:*}
+
+logging:
+  level:
+    root: INFO
+    com.project: DEBUG
+    software.amazon.awssdk: DEBUG
+    org.springframework: INFO

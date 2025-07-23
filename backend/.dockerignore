@@ -1,0 +1,22 @@
+.git
+.gitignore
+.gradle
+.idea
+.mvn
+
+
+*.iml
+*.class
+*.log
+src/**/*.properties
+src/**/*.yml
+src/**/*.bak
+### IDE-specific files ###
+.vscode/
+*.swp
+*.bak
+*.swo
+.project
+.classpath
+.settings/
+.factorypath

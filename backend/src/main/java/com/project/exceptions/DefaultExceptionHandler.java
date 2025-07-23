@@ -1,4 +1,4 @@
-package com.project.exception;
+package com.project.exceptions;
 
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.http.HttpStatus;

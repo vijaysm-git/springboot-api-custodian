@@ -1,8 +1,8 @@
 package com.project.customer;
 
-import com.project.exception.DuplicateResourceException;
-import com.project.exception.RequestValidationException;
-import com.project.exception.ResourceNotFoundException;
+import com.project.exceptions.DuplicateResourceException;
+import com.project.exceptions.RequestValidationException;
+import com.project.exceptions.ResourceNotFoundException;
 import com.project.s3.S3Buckets;
 import com.project.s3.S3Service;
 import org.junit.jupiter.api.BeforeEach;
