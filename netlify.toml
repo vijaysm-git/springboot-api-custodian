@@ -5,3 +5,8 @@ command = "CI= npm run build"
 
 [build.environment]
 VITE_API_BASE_URL = "https://backend-springboot-v1-0.onrender.com"
+
+[[redirects]]
+from = "/*"
+to = "/index.html"
+status = 200
