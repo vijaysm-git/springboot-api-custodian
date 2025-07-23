@@ -1,6 +1,6 @@
 [build]
 base = "frontend/react"
-publish = "build"
+publish = "dist"
 command = "CI= npm run build"
 
 [build.environment]
