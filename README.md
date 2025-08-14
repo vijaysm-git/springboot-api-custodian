@@ -1,6 +1,10 @@
 # Project Title: Custodian
 
-A Simple CRUD Application that stores customer data and profile pictures, built with a comprehensive tech stack.
+Full-Stack, Cloud-Native Architecture – Designed and deployed a production-grade CRUD application with secure JWT-based authentication, PostgreSQL (managed via Supabase), and AWS S3 object storage for high-fidelity profile image management.
+
+Enterprise-Grade Data Handling – Implements ACID-compliant relational persistence, encrypted data transport (TLS 1.3), and geo-redundant asset storage, ensuring durability, scalability, and low-latency access.
+
+Scalable Deployment Pipeline – Backend service orchestrated and auto-scaled via Render’s cloud infrastructure with zero-downtime CI/CD deployments, optimized query execution, and high availability.
 
 ## Table of Contents
 
