@@ -6,6 +6,8 @@ Enterprise-Grade Data Handling – Implements ACID-compliant relational persiste
 
 Scalable Deployment Pipeline – Backend service orchestrated and auto-scaled via Render’s cloud infrastructure with zero-downtime CI/CD deployments, optimized query execution, and high availability.
 
+
+
 ## Table of Contents
 
 - [About the Project](#about-the-project)
